@@ -1,0 +1,11 @@
+
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #6d57f8;    /* Ungu Gelap */
+  --color-secondary: #c1b7ff;  /* Ungu Terang */
+  --color-base: #f3f3f3;       /* Abu-abu Terang Background */
+  
+  --font-sans: "Inter", sans-serif; /* Font modern */
+}
