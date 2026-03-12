@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/"Logo UPN.png"" alt="Logo UPN" width="150"/>
+  <img src="img/LOGO520UPN.jpeg"" alt="Logo UPN" width="150"/>
 
   # Pilih.in
 </div>
