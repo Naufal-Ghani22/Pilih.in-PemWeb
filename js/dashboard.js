@@ -52,6 +52,10 @@ function buildHistoryItem(item) {
     actions.className = 'mt-4 flex flex-wrap gap-2';
     actions.innerHTML = `
         <a href="hasil.html" class="inline-flex items-center justify-center rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-50">Lihat Hasil</a>
+        <a href="roadmap.html?jurusan=${item.recommendedMajor}"
+            class="inline-flex items-center justify-center rounded-full bg-primary text-white px-4 py-2 text-sm font-semibold hover:opacity-90">
+            Lihat Roadmap
+            </a>
         <button class="inline-flex items-center justify-center rounded-full bg-primary text-white px-4 py-2 text-sm font-semibold hover:opacity-90" data-action="save-roadmap">Simpan Roadmap</button>
         <button class="inline-flex items-center justify-center rounded-full border border-red-200 text-red-600 px-4 py-2 text-sm font-semibold hover:bg-red-50" data-action="delete">Hapus</button>
     `;
