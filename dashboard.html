@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih.in - Dashboard</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="./js/dashboard.js"></script>
+</head>
+<body class="bg-base font-sans text-slate-800 min-h-screen">
+
+    <header class="bg-white fixed top-0 left-0 w-full shadow-sm z-50">
+        <div class="container mx-auto px-4 lg:px-12 py-4 flex items-center justify-between">
+            <a href="index.html" class="font-bold text-2xl text-primary">Pilih.in</a>
+            <div class="flex items-center gap-3">
+                <a href="tes.html" class="text-sm font-semibold text-slate-600 hover:text-primary transition">Mulai Tes</a>
+                <button id="logout-button" class="text-sm font-semibold text-white bg-primary px-5 py-2 rounded-full hover:shadow-lg hover:opacity-90 transition">Keluar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-28 pb-16">
+        <div class="container mx-auto px-4 lg:px-12">
+            <div class="flex flex-col lg:flex-row gap-10">
+                <section class="w-full lg:w-1/3 bg-white rounded-3xl shadow-lg p-8">
+                    <div class="flex flex-col items-center text-center gap-4">
+                        <div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center">
+                            <span id="profile-initials" class="text-3xl font-bold text-primary"></span>
+                        </div>
+                        <div>
+                            <h2 id="profile-name" class="text-2xl font-bold text-slate-800"></h2>
+                            <p id="profile-username" class="text-sm text-slate-500"></p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="p-4 rounded-2xl border border-slate-100">
+                            <p class="text-xs font-semibold text-slate-400">Email</p>
+                            <p id="profile-email" class="text-sm font-semibold text-slate-700"></p>
+                        </div>
+                        <div class="p-4 rounded-2xl border border-slate-100">
+                            <p class="text-xs font-semibold text-slate-400">Asal Sekolah</p>
+                            <p id="profile-school" class="text-sm font-semibold text-slate-700"></p>
+                        </div>
+                        <div class="p-4 rounded-2xl border border-slate-100">
+                            <p class="text-xs font-semibold text-slate-400">Peminatan</p>
+                            <p id="profile-major" class="text-sm font-semibold text-slate-700"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="w-full lg:w-2/3 space-y-10">
+                    <div class="bg-white rounded-3xl shadow-lg p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h2 class="text-2xl font-bold text-slate-800">Riwayat Tes</h2>
+                                <p class="text-sm text-slate-500">Hasil tes yang pernah kamu kerjakan.</p>
+                            </div>
+                            <a href="tes.html" class="text-sm font-semibold text-primary hover:underline">Kerjakan Tes Lagi</a>
+                        </div>
+
+                        <div id="history-empty" class="text-center py-10 text-slate-500">
+                            Belum ada riwayat tes. Kerjakan tes pertama kamu untuk melihat rekomendasi jurusan.
+                        </div>
+
+                        <div id="history-list" class="space-y-4 hidden"></div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-lg p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <div>
+                                <h2 class="text-2xl font-bold text-slate-800">Saved Roadmaps</h2>
+                                <p class="text-sm text-slate-500">Jurusan yang kamu tandai untuk dipelajari.</p>
+                            </div>
+                            <button id="clear-roadmaps" class="text-sm font-semibold text-red-600 hover:underline">Hapus Semua</button>
+                        </div>
+
+                        <div id="roadmap-empty" class="text-center py-10 text-slate-500">
+                            Hilangkan keraguan dengan menyimpan roadmap jurusan favoritmu. Klik "Simpan Roadmap" pada halaman hasil tes.
+                        </div>
+
+                        <div id="roadmap-list" class="space-y-3 hidden"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-6 text-sm text-slate-500">
+        &copy; 2026 Pilih.in • Semua hak dilindungi.
+    </footer>
+
+</body>
+</html>
