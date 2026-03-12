@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih.in - Hasil Tes</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/hasil.js"></script>
+</head>
+<body class="bg-base font-sans text-slate-800 pt-24 pb-16">
+
+    <header class="bg-white fixed top-0 left-0 w-full flex items-center z-50 shadow-sm">
+        <div class="container mx-auto px-4 lg:px-12 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-2xl text-primary">Pilih.in</a>
+            <a href="index.html" class="text-sm font-semibold text-slate-500 hover:text-primary transition">&larr; Kembali ke Beranda</a>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 lg:px-12">
+        
+        <section class="bg-white rounded-3xl shadow-lg p-8 lg:p-14 mb-10 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-secondary/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+            
+            <h3 class="text-lg font-semibold text-slate-500 mb-2 relative z-10">Berdasarkan hasil analisismu, kamu paling cocok di jurusan:</h3>
+            <h1 class="text-4xl lg:text-6xl font-bold text-primary mb-6 relative z-10">Sistem Informasi</h1>
+            
+            <div class="inline-flex items-center justify-center bg-green-100 text-green-700 font-bold px-6 py-2 rounded-full mb-8 relative z-10">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                Tingkat Kecocokan: 92%
+            </div>
+            
+            <p class="max-w-2xl mx-auto text-slate-600 mb-10 text-lg relative z-10">
+                Kamu memiliki perpaduan yang langka antara kemampuan logika bisnis dan pemahaman teknologi. Jurusan ini akan membantumu menjembatani kebutuhan perusahaan dengan solusi IT yang inovatif.
+            </p>
+            
+            <a href="roadmap.html" class="inline-block bg-primary text-white font-bold py-4 px-10 rounded-full hover:shadow-xl hover:opacity-90 transition duration-300 transform hover:-translate-y-1 relative z-10">
+                Lihat Roadmap Jurusan Ini
+            </a>
+        </section>
+
+        <div class="flex flex-wrap -mx-4">
+            
+            <div class="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
+                <div class="bg-white rounded-3xl shadow-lg p-8 h-full">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">Analisis Potensimu</h3>
+                    <p class="text-slate-500 mb-6 text-sm">Grafik ini menunjukkan dominasi sifat dan keahlian dasarmu berdasarkan jawaban tes sebelumnya.</p>
+                    
+                    <div class="w-full max-w-sm mx-auto aspect-square">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 px-4">
+                <div class="bg-white rounded-3xl shadow-lg p-8 h-full">
+                    <h3 class="text-2xl font-bold text-slate-800 mb-6">Alternatif Jurusan (Plan B)</h3>
+                    <p class="text-slate-500 mb-6 text-sm">Selain rekomendasi utama, jurusan-jurusan ini juga sangat relevan dengan profil kepribadianmu.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="p-5 border-2 border-slate-100 rounded-2xl hover:border-secondary transition group cursor-pointer">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold text-lg text-slate-800 group-hover:text-primary transition">Ilmu Komputer</h4>
+                                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">85% Cocok</span>
+                            </div>
+                            <p class="text-sm text-slate-500">Fokus mendalam pada algoritma, kecerdasan buatan, dan arsitektur *software*.</p>
+                        </div>
+
+                        <div class="p-5 border-2 border-slate-100 rounded-2xl hover:border-secondary transition group cursor-pointer">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold text-lg text-slate-800 group-hover:text-primary transition">Bisnis Digital</h4>
+                                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">80% Cocok</span>
+                            </div>
+                            <p class="text-sm text-slate-500">Mempelajari strategi *startup*, *e-commerce*, dan pemasaran di era digital.</p>
+                        </div>
+
+                        <div class="p-5 border-2 border-slate-100 rounded-2xl hover:border-secondary transition group cursor-pointer">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold text-lg text-slate-800 group-hover:text-primary transition">Desain Komunikasi Visual</h4>
+                                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">75% Cocok</span>
+                            </div>
+                            <p class="text-sm text-slate-500">Cocok untuk sisi kreatifmu dalam merancang antarmuka (UI/UX) dan *branding* visual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

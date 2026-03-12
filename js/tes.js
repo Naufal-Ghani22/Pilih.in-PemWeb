@@ -117,16 +117,16 @@ const questions = [
             }
         }
 
+        // KODE BARU DI tes.js
         function selesaiTes() {
             if (userAnswers[currentIndex] !== undefined) {
-                // Buat progress bar jadi 100% saat klik selesai
                 document.getElementById('progress-bar').style.width = '100%';
                 document.getElementById('progress-percentage').innerText = '100%';
                 
-                // Di sini nanti logika kalkulasi nilai dimasukkan
-                console.log("Data Jawaban User:", userAnswers);
+                // Simpan data jawaban ke memori browser sebelum pindah
+                localStorage.setItem('hasilTesPilihin', JSON.stringify(userAnswers));
                 
                 alert("Tes Selesai! Mengarahkan ke halaman Hasil Rekomendasi...");
-                // window.location.href = "hasil.html"; 
+                window.location.href = "hasil.html"; // Tanda // dihapus agar kodenya aktif
             }
         }
