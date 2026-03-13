@@ -42,7 +42,7 @@ const kampusData = [
     },
     {
         id: 5,
-        logo: 'https://via.placeholder.com/80x80/c1b7ff/ffffff?text=UNDIP',
+        logo: './img/logo undip.jfif',
         nama: 'Universitas Diponegoro',
         lokasi: 'Jawa',
         akreditasi: 'A',
@@ -52,7 +52,7 @@ const kampusData = [
     },
     {
         id: 6,
-        logo: 'https://via.placeholder.com/80x80/6d57f8/ffffff?text=Unpad',
+        logo: './img/logo unpad.png',
         nama: 'Universitas Padjadjaran',
         lokasi: 'Jawa',
         akreditasi: 'A',
@@ -125,9 +125,9 @@ function renderKampus(kampuses) {
 
 function getBiayaDisplay(biaya) {
     const ranges = {
-        low: '5-10 Juta',
-        medium: '10-30 Juta',
-        high: '30-50+ Juta'
+        low: '1-7 Juta',
+        medium: '1-15 Juta',
+        high: '1-20+ Juta'
     };
     return ranges[biaya] || biaya;
 }
