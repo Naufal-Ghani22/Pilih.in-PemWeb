@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih.in - Tentang Kami</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-base font-sans text-slate-800 min-h-screen flex flex-col">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-slate-200/50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-12">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4 py-5">
+                    <a href="index.html" class="font-bold text-2xl text-primary block tracking-tight">Pilih.in</a>
+                </div>
+                
+                <div class="flex items-center px-4">
+                    <nav class="hidden lg:block">
+                        <ul class="flex space-x-8">
+                            <li><a href="index.html" class="text-base font-semibold text-slate-800 hover:text-primary transition">Beranda</a></li>
+                            <li><a href="tes.html" class="text-base font-semibold text-slate-800 hover:text-primary transition">Tes Minat</a></li>
+                            <li><a href="roadmap.html" class="text-base font-semibold text-slate-800 hover:text-primary transition">Roadmap</a></li>
+                            <li><a href="about.html" class="text-base font-semibold text-primary transition">Tentang Kami</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="hidden lg:flex items-center ml-8 space-x-4">
+                        <a href="auth.html?mode=login" class="text-base font-semibold text-slate-600 hover:text-primary transition">Login</a>
+                        <a href="auth.html?mode=register" class="text-base font-semibold text-white bg-primary py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition">Daftar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 flex-grow">
+        
+        <div class="container mx-auto px-4 lg:px-12 mb-16">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-sm font-bold text-secondary uppercase tracking-widest mb-3">Tim Pengembang</p>
+                <h1 class="text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight">Di Balik Layar <span class="text-primary">Pilih.in</span></h1>
+                <p class="text-lg text-slate-500 leading-relaxed">
+                    Kami adalah tiga mahasiswa Sistem Informasi UPN "Veteran" Jawa Timur yang berkolaborasi untuk menciptakan solusi bagi calon mahasiswa agar tidak merasa salah jurusan.
+                </p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white rounded-3xl shadow-lg p-8 text-center hover:-translate-y-2 transition duration-300 border border-slate-100">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-5 border-4 border-secondary/30">
+                        <img src="img/FotoNaufal.png" alt="Naufal Ghani" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Naufal Ghani B.</h3>
+                    <p class="text-primary font-semibold text-sm mb-1">Project Manager</p>
+                    <p class="text-slate-400 text-xs font-semibold mb-5">NPM: 24082010162</p>
+                    
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Memimpin jalannya proyek, mendesain infrstruktur antarmuka (UI) menggunakan Tailwind CSS, dan memastikan user experience (UX) yang nyaman digunakan.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-lg p-8 text-center hover:-translate-y-2 transition duration-300 border border-slate-100">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-5 border-4 border-secondary/30">
+                        <img src="img/FotoNicholas.jpeg" alt="Nicholas" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Nicholas Napitupulu</h3>
+                    <p class="text-primary font-semibold text-sm mb-1">Frontend Developer</p>
+                    <p class="text-slate-400 text-xs font-semibold mb-5">NPM : 24082010158</p>
+                    
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Fokus pada implementasi kode HTML dan struktur web. Memastikan setiap komponen tampilan di Pilih.in dapat diakses dengan responsif melalui HP maupun laptop.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-lg p-8 text-center hover:-translate-y-2 transition duration-300 border border-slate-100">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-5 border-4 border-secondary/30">
+                        <img src="img/FotoFaiz.jpeg" alt="Faiz" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-slate-800 mb-1">Faiz Ihda Husni Husodo</h3>
+                    <p class="text-primary font-semibold text-sm mb-1">Backend & Logic</p>
+                    <p class="text-slate-400 text-xs font-semibold mb-5">NPM : 24082010138</p>
+                    
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Menangani User Experience (UX) dan logika di balik layar, termasuk alur tes minat bakat, pemrosesan hasil, dan integrasi data untuk memberikan rekomendasi jurusan yang akurat.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary pt-16 pb-8 mt-auto">
+        <div class="container mx-auto px-4 lg:px-12">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full px-4 mb-12 text-secondary md:w-1/2 lg:w-1/3">
+                    <h2 class="font-bold text-3xl text-white mb-5">Pilih.in</h2>
+                    <p class="font-medium text-base mb-4 leading-relaxed">Platform inovatif untuk menavigasi masa depan pendidikan Indonesia. Jangan biarkan dirimu merasa salah jurusan.</p>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/2 lg:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Jelajahi</h3>
+                    <ul class="text-secondary space-y-3">
+                        <li><a href="index.html" class="inline-block text-base hover:text-white transition">Beranda</a></li>
+                        <li><a href="tes.html" class="inline-block text-base hover:text-white transition">Mulai Tes Minat</a></li>
+                        <li><a href="roadmap.html" class="inline-block text-base hover:text-white transition">Roadmap Jurusan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full pt-8 border-t border-secondary/30 flex justify-center">
+                <p class="font-medium text-sm text-secondary text-center">&copy; 2026 Pilih.in - Kelompok PemWeb UPNVJT.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
